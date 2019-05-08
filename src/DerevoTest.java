@@ -20,7 +20,7 @@ EventQueue.invokeLater(new Runnable() {
 class DerevoFrameEdit extends JFrame {
 	private static final long serialVersionUID = 1L;
 	public DerevoFrameEdit() {
-		setTitle("Дерево");
+		setTitle ("ДеревоМир");//имя окна. 
 		setSize(DEFAULT_WIDTH, DEFAULT_HEIGHT);
  
 		TreeNode root = makeSampleDerevo();
@@ -34,19 +34,19 @@ class DerevoFrameEdit extends JFrame {
 		makeButtons();
 	}
 	public TreeNode makeSampleDerevo() {
-		DefaultMutableTreeNode root = new DefaultMutableTreeNode("Мир");
+		DefaultMutableTreeNode root = new DefaultMutableTreeNode("Мир");//название корня дерева.
 		DefaultMutableTreeNode country = new DefaultMutableTreeNode("Белорусь");
-		root.add(country);
+		root.add(country);//добавление и название наследника, страна. 
 		DefaultMutableTreeNode city = new DefaultMutableTreeNode("Минск");
-		country.add(city);
+		country.add(city);// добавить наследника, город.
 		country = new DefaultMutableTreeNode("Россия");
-		root.add(country);
+		root.add(country);//добавить страну.
 		city = new DefaultMutableTreeNode("Москва");
-		country.add(city);
+		country.add(city);//добавить город.
 		country = new DefaultMutableTreeNode("Германия");
-		root.add(country);
+		root.add(country);//добавить страну.
 		city = new DefaultMutableTreeNode("Берлин");
-		country.add(city);
+		country.add(city);//добавит город.
 		return root;
 	}
 	public void makeButtons() {
